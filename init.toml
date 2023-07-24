@@ -8,7 +8,7 @@
 
 # All SpaceVim option below [option] section
 [options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
+    # set spacevim theme. by default cmolorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
     [[layers]]
@@ -55,7 +55,7 @@ auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
   name = "lang#go"
-  go_interpreter = '~/download/bin/go'
+  #go_interpreter = '~/download/bin/go'
 [[layers]]
   name = "lang#python"
 [[layers]]
@@ -65,6 +65,7 @@ auto_completion_tab_key_behavior = "smart"
 [[layers]]
   name = "git"
   git-plugin = "fugitive"
+  enable_mru = true
 [[layers]]
   name = "lang#dockerfile"
 [[layers]]
@@ -75,10 +76,23 @@ auto_completion_tab_key_behavior = "smart"
   name = "lang#sh"
 [[layers]]
   name = "VersionControl"
+
 [[layers]]
   name = 'checkers'
 [[layers]] 
   name = 'debug'
+[[layers]]
+  name = 'lsp'
+[[layers]]
+ name = 'snippet' 
+ [[layers]]
+ name = 'statusline'
+[[layers]]
+  name = 'debugger'
+debugger_default = 'pdb'
+[[layers]]
+  name = 'tabnine'
+	
 
 #Everything after this line is bs
 #BULLSHIT
